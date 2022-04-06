@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://github.com/hlg212/FCF/merit/" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>优点特性 - FCF 文档</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "\u4f18\u70b9\u7279\u6027";
+        var mkdocs_page_input_path = "merit.md";
+        var mkdocs_page_url = "/hlg212/FCF/merit/";
+      </script>
+    
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> FCF 文档
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">FCF 是什么</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">功能与设计</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">优点特性</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#_2">统一结果与异常</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_3">统一接口</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_4">代码减少</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_5">隐式注入与转换</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_6">事件通知模型</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_7">缓存,刷新模型</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_8">日志与链路</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_9">文档</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_10">集成</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../config/">配置</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">数据库</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../orm/">ORM</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../autoFill/">自动填充</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../dynamicDataSource/">多数据源</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../liquibase/">版本控制</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">业务接口</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../layeredModel/">分层模型</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../uniformInterface/">统一接口</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../importExport/">导入导出</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../qco/">查询条件对象</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">缓存</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../cache/">多级缓存</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../cacheEvent/">缓存事件</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../feign/">feign</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../eventBus/">事件总线</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../swagger/">文档</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../task/">定时任务</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">日志</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../logCollection/">日志收集</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../traceLog/">链路日志</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../starter/">集成</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../helper/">工具</a>
+                  </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../examples/">例子</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../promissory/">规范与约定</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../confSpec/">配置说明</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../selection/">技术选型</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../faq/">常见问题</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../feedback/">交流反馈</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">FCF 文档</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>功能与设计 &raquo;</li><li>优点特性</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="_1">优点特性</h1>
+<h2 id="_2">统一结果与异常</h2>
+<p>返回结果<a href="../result/">统一封装</a>，不对代码产生入侵；
+<code>public Integer count(@RequestParamOrBody Q queryProperty);</code>
+实际数据在【data】 字段中</p>
+<pre><code>{
+  &quot;success&quot;: true,
+  &quot;code&quot;: &quot;200&quot;,
+  &quot;msg&quot;: &quot;&quot;,
+  &quot;data&quot;: 0
+}
+</code></pre>
+<h2 id="_3">统一接口</h2>
+<p>框架顶层设计了 Query 、Curd 接口</p>
+<p>将 Dao、Service、Controller、Api 等不同层的操作保持了一致；</p>
+<p>采用了泛型的方式，使每一层面向的数据结构不同，但接口却又能保持一致，编写起来更友好简单；</p>
+<h2 id="_4">代码减少</h2>
+<p>零代码实现增删改查导入导出</p>
+<p>基于领域三层模型提供了常用的业务框架接口</p>
+<p>DAO 、Service 、Controller 都有统一的 增删改查接口</p>
+<p>采用默认方法的方式提供接口，不会对业务代码产生入侵</p>
+<h2 id="_5">隐式注入与转换</h2>
+<p>DAO 自动注入到 Service, Service 自动注入到 Controller</p>
+<p>按照分层模型，每层操作自己层的模型数据</p>
+<p>DAO 操作 PO</p>
+<p>Service 操作 BO</p>
+<h2 id="_6">事件通知模型</h2>
+<p>考虑了微服务中事件隔离与事件订阅</p>
+<p>spring cloud bus 实现的事件模型</p>
+<p>为每个业务级别隔离创建消息通道</p>
+<p>定义了粒度更小模型支持</p>
+<h2 id="_7">缓存,刷新模型</h2>
+<p>考虑了微服务中缓存隔离与共享</p>
+<p>将业务操作与缓存刷新操作进行分离</p>
+<h2 id="_8">日志与链路</h2>
+<p>自动收集日志</p>
+<p>集成skwalking日志收集，将调用链与日志进行结合</p>
+<h2 id="_9">文档</h2>
+<p>基于swagger，自动将字段进行映射，提供swagger认证</p>
+<p>GET采用from展开参数列表，方便开发调试</p>
+<p>POST采用body json方式，方便开发</p>
+<h2 id="_10">集成</h2>
+<p>基于spring autoConfiguration规范提供自动装配</p>
+<p>可以将多个服务打包到一起，作为一个服务运行，不影响源码开发模式</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href=".." class="btn btn-neutral float-left" title="FCF 是什么"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../config/" class="btn btn-neutral float-right" title="配置">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href=".." style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../config/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
