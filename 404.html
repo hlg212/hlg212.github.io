@@ -1,189 +1,280 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="shortcut icon" href="/hlg212/FCF/img/favicon.ico" />
-    <title>FCF 文档</title>
-    <link rel="stylesheet" href="/hlg212/FCF/css/theme.css" />
-    <link rel="stylesheet" href="/hlg212/FCF/css/theme_extra.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
-    
-    <script src="/hlg212/FCF/js/jquery-3.6.0.min.js" defer></script>
-    <!--[if lt IE 9]>
-      <script src="/hlg212/FCF/js/html5shiv.min.js"></script>
-    <![endif]-->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
-      <script>hljs.initHighlightingOnLoad();</script> 
-</head>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="/hlg212/FCF/img/favicon.ico">
+        <title>FCF 文档</title>
+        <link href="/hlg212/FCF/css/bootstrap.min.css" rel="stylesheet">
+        <link href="/hlg212/FCF/css/font-awesome.min.css" rel="stylesheet">
+        <link href="/hlg212/FCF/css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
 
-<body class="wy-body-for-nav" role="document">
+        <script src="/hlg212/FCF/js/jquery-1.10.2.min.js" defer></script>
+        <script src="/hlg212/FCF/js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
 
-  <div class="wy-grid-for-nav">
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
-    <div class="wy-side-scroll">
-      <div class="wy-side-nav-search">
-          <a href="/hlg212/FCF/." class="icon icon-home"> FCF 文档
-        </a><div role="search">
-  <form id ="rtd-search-form" class="wy-form" action="/hlg212/FCF//search.html" method="get">
-      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
-  </form>
-</div>
-      </div>
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="/hlg212/FCF/.">FCF 文档</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="/hlg212/FCF/.">FCF 是什么</a>
-                </li>
-              </ul>
-              <p class="caption"><span class="caption-text">功能与设计</span></p>
-              <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="/hlg212/FCF/merit/">优点特性</a>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="/hlg212/FCF/config/">配置</a>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="#">数据库</a>
-    <ul>
-                <li class="toctree-l2"><a class="reference internal" href="/hlg212/FCF/orm/">ORM</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="/hlg212/FCF/autoFill/">自动填充</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="/hlg212/FCF/dynamicDataSource/">多数据源</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="/hlg212/FCF/liquibase/">版本控制</a>
-                </li>
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="/hlg212/FCF/." class="nav-link">概述</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">功能与设计 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="/hlg212/FCF/merit/" class="dropdown-item">优点特性</a>
+</li>
+                                    
+<li>
+    <a href="/hlg212/FCF/config/" class="dropdown-item">配置</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">数据库</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="/hlg212/FCF/orm/" class="dropdown-item">ORM</a>
+</li>
+            
+<li>
+    <a href="/hlg212/FCF/autoFill/" class="dropdown-item">自动填充</a>
+</li>
+            
+<li>
+    <a href="/hlg212/FCF/dynamicDataSource/" class="dropdown-item">多数据源</a>
+</li>
+            
+<li>
+    <a href="/hlg212/FCF/liquibase/" class="dropdown-item">版本控制</a>
+</li>
     </ul>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="#">业务接口</a>
-    <ul>
-                <li class="toctree-l2"><a class="reference internal" href="/hlg212/FCF/layeredModel/">分层模型</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="/hlg212/FCF/uniformInterface/">统一接口</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="/hlg212/FCF/importExport/">导入导出</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="/hlg212/FCF/qco/">查询条件对象</a>
-                </li>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">业务接口</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="/hlg212/FCF/layeredModel/" class="dropdown-item">分层模型</a>
+</li>
+            
+<li>
+    <a href="/hlg212/FCF/uniformInterface/" class="dropdown-item">统一接口</a>
+</li>
+            
+<li>
+    <a href="/hlg212/FCF/importExport/" class="dropdown-item">导入导出</a>
+</li>
+            
+<li>
+    <a href="/hlg212/FCF/qco/" class="dropdown-item">查询条件对象</a>
+</li>
     </ul>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="#">缓存</a>
-    <ul>
-                <li class="toctree-l2"><a class="reference internal" href="/hlg212/FCF/cache/">多级缓存</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="/hlg212/FCF/cacheEvent/">缓存事件</a>
-                </li>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">缓存</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="/hlg212/FCF/cache/" class="dropdown-item">多级缓存</a>
+</li>
+            
+<li>
+    <a href="/hlg212/FCF/cacheEvent/" class="dropdown-item">缓存事件</a>
+</li>
     </ul>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="/hlg212/FCF/feign/">feign</a>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="/hlg212/FCF/eventBus/">事件总线</a>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="/hlg212/FCF/swagger/">文档</a>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="/hlg212/FCF/task/">定时任务</a>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="#">日志</a>
-    <ul>
-                <li class="toctree-l2"><a class="reference internal" href="/hlg212/FCF/logCollection/">日志收集</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="/hlg212/FCF/traceLog/">链路日志</a>
-                </li>
+  </li>
+                                    
+<li>
+    <a href="/hlg212/FCF/feign/" class="dropdown-item">feign</a>
+</li>
+                                    
+<li>
+    <a href="/hlg212/FCF/eventBus/" class="dropdown-item">事件总线</a>
+</li>
+                                    
+<li>
+    <a href="/hlg212/FCF/swagger/" class="dropdown-item">文档</a>
+</li>
+                                    
+<li>
+    <a href="/hlg212/FCF/task/" class="dropdown-item">定时任务</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">日志</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="/hlg212/FCF/logCollection/" class="dropdown-item">日志收集</a>
+</li>
+            
+<li>
+    <a href="/hlg212/FCF/traceLog/" class="dropdown-item">链路日志</a>
+</li>
     </ul>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="/hlg212/FCF/starter/">集成</a>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="/hlg212/FCF/helper/">工具</a>
-                  </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="/hlg212/FCF/examples/">例子</a>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="/hlg212/FCF/promissory/">规范与约定</a>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="/hlg212/FCF/confSpec/">配置说明</a>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="/hlg212/FCF/selection/">技术选型</a>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="/hlg212/FCF/faq/">常见问题</a>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="/hlg212/FCF/feedback/">交流反馈</a>
-                </li>
-              </ul>
+  </li>
+                                    
+<li>
+    <a href="/hlg212/FCF/starter/" class="dropdown-item">集成</a>
+</li>
+                                    
+<li>
+    <a href="/hlg212/FCF/helper/" class="dropdown-item">工具</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="/hlg212/FCF/examples/" class="nav-link">快速开始</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">配置与约定 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="/hlg212/FCF/confSpec/" class="dropdown-item">配置说明</a>
+</li>
+                                    
+<li>
+    <a href="/hlg212/FCF/promissory/" class="dropdown-item">约定</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="/hlg212/FCF/selection/" class="nav-link">技术选型</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">交流反馈 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="/hlg212/FCF/faq/" class="dropdown-item">常见问题</a>
+</li>
+                                    
+<li>
+    <a href="/hlg212/FCF/feedback/" class="dropdown-item">交流反馈</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+
+    <div class="row-fluid">
+      <div id="main-content" class="span12">
+        <h1 id="404-page-not-found" style="text-align: center">404</h1>
+        <p style="text-align: center"><strong>Page not found</strong></p>
       </div>
     </div>
-    </nav>
-
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="/hlg212/FCF/.">FCF 文档</a>
-        
-      </nav>
-      <div class="wy-nav-content">
-        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
-  <ul class="wy-breadcrumbs">
-    <li><a href="/hlg212/FCF/." class="icon icon-home" alt="Docs"></a> &raquo;</li>
-    <li class="wy-breadcrumbs-aside">
-    </li>
-  </ul>
-  <hr/>
-</div>
-
-          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
-            <div class="section" itemprop="articleBody">
-              
-
-  <h1 id="404-page-not-found">404</h1>
-
-  <p><strong>Page not found</strong></p>
 
 
             </div>
-          </div><footer>
-
-  <hr/>
-
-  <div role="contentinfo">
-    <!-- Copyright etc -->
-  </div>
-
-  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
-</footer>
-          
         </div>
-      </div>
 
-    </section>
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "/hlg212/FCF/",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="/hlg212/FCF/js/base.js" defer></script>
+        <script src="/hlg212/FCF/search/main.js" defer></script>
 
-  </div>
-
-  <div class="rst-versions" role="note" aria-label="Versions">
-  <span class="rst-current-version" data-toggle="rst-current-version">
-    
-    
-    
-  </span>
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
 </div>
-    <script>var base_url = '/hlg212/FCF/';</script>
-    <script src="/hlg212/FCF/js/theme_extra.js" defer></script>
-    <script src="/hlg212/FCF/js/theme.js" defer></script>
-      <script src="/hlg212/FCF/search/main.js" defer></script>
-    <script defer>
-        window.onload = function () {
-            SphinxRtdTheme.Navigation.enable(true);
-        };
-    </script>
 
-</body>
+    </body>
 </html>
